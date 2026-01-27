@@ -1,3 +1,3 @@
-numero = eval(input('Entre com um inteiro: '))
-numero = numero + 2
-print(numero)
+x = eval(input('Entre com a sua idade: '))
+x += 1
+print(x)
