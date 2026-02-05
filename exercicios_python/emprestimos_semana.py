@@ -28,6 +28,3 @@ elif(indiceDia == 6):
     print(f'O dia com maior número de empréstimos foi Sexta')
 elif(indiceDia == 7):
     print(f'O dia com maior número de empréstimos foi Sábado')
-
-
-
