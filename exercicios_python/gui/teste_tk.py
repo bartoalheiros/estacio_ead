@@ -1,12 +1,13 @@
-import tkinter as tk
+#import tkinter as tk
+from tkinter import Tk, Button
 
-janela = tk.Tk()
+def acao():
+    print("Botão pressionado!")
 
-janela.title("Minha Aplicação")
-janela.geometry("300x200")
+principal = Tk()
 
 # Criando um botão
-botao = tk.Button(janela, text="Clique Aqui") #Posicionando
-botao.place(x=50, y=50)
+botao = Button(principal, text="Clique Aqui", command=acao) #Posicionando
+botao.place(x=100, y=25)
 
-janela.mainloop()
+principal.mainloop()
