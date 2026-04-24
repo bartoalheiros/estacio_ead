@@ -4,6 +4,9 @@
     <content url="file://$USER_HOME$/Pos/estacio_ead">
       <excludeFolder url="file://$USER_HOME$/Pos/estacio_ead/.venv" />
     </content>
+    <content url="file://$MODULE_DIR$/exercicios_python">
+      <sourceFolder url="file://$MODULE_DIR$/exercicios_python" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.14 (estacio_ead)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
