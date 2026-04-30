@@ -3,9 +3,8 @@ from tkinter import Button, Entry, Label, PhotoImage, messagebox
 from modulos import imc
 
 def acao():
-    print("Botão pressionado!")
     indice = imc.calcula_imc(peso=peso.get(), altura=altura.get())
-    classificacao = imc.classifica_imc(indice)
+    classificacao = imc.classifica_imc(indice,altura.get())
     msg = messagebox.showinfo("Classifcação IMC", classificacao)
 
 principal = tkinter.Tk()
@@ -78,5 +77,7 @@ botao.place(x=175, y=100) # Centralizado horizontalmente
 #botao = Button(principal, text="Calcular", command=acao)
 #botao.grid(row=2, column=2)
 
+# Vincula o Enter da janela à função acao
+principal.bind('<Return>', lambda event: acao())
 principal.mainloop()
 
