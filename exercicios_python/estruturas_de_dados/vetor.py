@@ -10,6 +10,24 @@ def altera_matriz(m,val,ln,col):
     m[ln][col] = val
     return m
 
+#efetua a multiplicação de duas matrizes A e B
+def mult_matrizes(A, B):
+    nLinhasA = len(A)
+    nColunasA = len(A[0])
+    nColunasB = len(B[0])
+
+    M = []
+
+    for linha in range(nLinhasA):
+        #começando a linha nova em M
+        M.append([])
+        for coluna in range(nColunasB):
+            M[linha].append(0)
+            for k in range(nColunasA):
+                M[linha][coluna] += A[linha][k]*B[k][coluna]
+
+    return M
+
 #definir matriz é como definimos o vetor, só que a matriz vai ter várias dimensões
 cadeiras = array([['Português', 'Matemática', 'Química'], ['História', 'Geografia', 'Física']], dtype=str)
 
@@ -21,8 +39,8 @@ cadeiras = array([['Português', 'Matemática', 'Química'], ['História', 'Geog
 #cadeiras[1][0] = 'Cálculo'
 #print(cadeiras[1][0])
 
-m = altera_matriz(cadeiras,'Desenho',0,1)
+#m = altera_matriz(cadeiras,'Desenho',0,1)
 
-for linha in cadeiras:
-    for elemento in linha:
-        print(elemento)
+#for linha in cadeiras:
+#    for elemento in linha:
+#        print(elemento)
