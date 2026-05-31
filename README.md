@@ -18,8 +18,8 @@ Bem-vindo ao meu repositório de organização de conteúdo da Estácio EAD! Aqu
 
 ### 🐍 Introdução à Programação com Python
 Conteúdo focado nos fundamentos da linguagem Python, lógica de programação e estruturas de dados básicas.
-* [Ir para a pasta da disciplina](./1-periodo/python/)
-* **Status:** Concluído 
+* [Cálculadora IMC finalizada](https://github.com/bartoalheiros/estacio_ead/commit/07d4081e8ff010d87639c1365a0007a85f6f431b?diff=split)
+* **Status:** Em andamento 
 
 [⬆ Voltar ao Menu](#-menu-de-navegação-interativo)
 
