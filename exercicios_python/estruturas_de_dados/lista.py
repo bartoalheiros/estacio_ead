@@ -1,10 +1,10 @@
 #mostrando um item específico da lista
-print('Mostrando a lista criada..')
-lista = ['a', 'b', 'c', 'd']
-print(lista)
-print('Mostrando o segundo item da lista, de índice 1')
-item = lista[1]
-print(item)
+# print('Mostrando a lista criada..')
+# lista = ['a', 'b', 'c', 'd']
+# print(lista)
+# print('Mostrando o segundo item da lista, de índice 1')
+# item = lista[1]
+# print(item)
 
 # descobrindo o índice de um elemento na lista
 # lista = ['a', 'b', 'c', 'b']
@@ -72,14 +72,16 @@ print(item)
 #print(lista)
 
 #funcoes internas do Python
-lista = [3, 7, 2, 6]
-print('O comprimento da lista é: ') #tamanho da lista
-print(len(lista))
-print('O valor mínimo da lista é: ')
-print(min(lista)) #elemento de valor mínimo
-print('O valor máximo da lista é: ')
-print(max(lista)) #elemento de valor máximo
-print('A soma dos elementos da lista é: ')
-print(sum(lista)) #soma de elementos da lista
+# lista = [3, 7, 2, 6]
+# print('O comprimento da lista é: ') #tamanho da lista
+# print(len(lista))
+# print('O valor mínimo da lista é: ')
+# print(min(lista)) #elemento de valor mínimo
+# print('O valor máximo da lista é: ')
+# print(max(lista)) #elemento de valor máximo
+# print('A soma dos elementos da lista é: ')
+# print(sum(lista)) #soma de elementos da lista
 
 lista = [1, 3, 5, 7, 9]
+media = sum(lista)/len(lista)
+print(media)
