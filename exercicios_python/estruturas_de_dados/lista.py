@@ -82,6 +82,6 @@
 # print('A soma dos elementos da lista é: ')
 # print(sum(lista)) #soma de elementos da lista
 
-lista = [1, 3, 5, 7, 9]
-media = sum(lista)/len(lista)
-print(media)
+# lista = [1, 3, 5, 7, 9]
+# media = sum(lista)/len(lista)
+# print(media)
