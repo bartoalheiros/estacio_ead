@@ -1,0 +1,19 @@
+#construtores e metodo init e self
+# self é a forma da classe se referir a ela mesma
+# --init-- é o mo metodo construtor que cria o objeto da classe
+class Conta:
+    def __init__(self, numero, cpf, nomeTitular, saldo):
+        self.numero = numero
+        self.cpf = cpf
+        self.nomeTitular = nomeTitular
+        self.saldo = saldo
+
+def main():
+    c1 = Conta(1, "99999999999", "Joao", 1000) # Objeto sendo criado
+    print(f"Nome do titular da conta: {c1.nomeTitular}")
+    print(f"Número da conta: {c1.numero}")
+    print(f"CPF do titular da conta: {c1.cpf}")
+    print(f"Saldo da conta: {c1.saldo}")
+
+if __name__ == "__main__":
+    main()
