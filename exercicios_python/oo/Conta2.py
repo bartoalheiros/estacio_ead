@@ -5,6 +5,5 @@ class Conta:
         self.nomeTitular = nomeTitular
         self.saldo = saldo
 
-    def main(self):
-        c1 = Conta(1,1,"Joao",1000) # Objeto sendo
-        # instanciado
+def main():
+    c1 = Conta(1, 1, "Joao", 0)  # Objeto sendo criado
