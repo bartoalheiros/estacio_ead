@@ -1,4 +1,4 @@
-class Conta:
+class Conta_:
     def __init__(self, numero, cpf, nomeTitular, saldo):
         self.numero = numero
         self.cpf = cpf
@@ -19,8 +19,16 @@ class Conta:
         print(f"numero: {self.numero} \ncpf:"
               f"{self.cpf}\nsaldo: {self.saldo}")
 
+    def transfereValor(self, contaDestino, valor):
+        if self.saldo < valor:
+            return ("Não existe saldo suficiente")
+        else:
+            contaDestino.depositar(valor)
+            self.saldo -= valor
+            return("Tranferência Realizada")
+
 def main():
-    c1 = Conta(1, 1, "Joao", 0)  # Objeto sendo criado
+    c1 = Conta_(1, 1, "Joao", 0)  # Objeto sendo criado
     c1.depositar(300)
     saque = c1.sacar(400)
     c1.gerar_extrato()
