@@ -21,11 +21,11 @@ class Conta_:
 
     def transfereValor(self, contaDestino, valor):
         if self.saldo < valor:
-            return ("Não existe saldo suficiente")
+            return "Não existe saldo suficiente"
         else:
             contaDestino.depositar(valor)
             self.saldo -= valor
-            return("Tranferência Realizada")
+            return "Tranferência Realizada"
 
 def main():
     c1 = Conta_(1, 1, "Joao", 0)  # Objeto sendo criado
